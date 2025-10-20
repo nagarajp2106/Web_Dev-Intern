@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essence of Light</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">📸</a>
+            <nav id="nav">
+                <a href="#hero">Home</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <h1>Essence of Light</h1>
+        <p>A collection of photographs capturing the quiet dialogue between light and nature where landscapes, shadows,
+            and stillness come alive.</p>
+
+    </section>
+
+    <section class="photos" id="gallery">
+        <div class="photo-gallery" >
+            <img src="/images/photo1.jpg" alt="" >
+            <img src="/images/photo2.jpg" alt="" >
+            <img src="/images/photo7.jpg" alt="" >
+            <img src="/images/photo8.jpg" alt="" >
+            <img src="/images/photo5.jpg" alt="" >
+            <img src="/images/photo4.png" alt="" >
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="contact" id="contact">
+        <div class="footer-container">
+            <div class="social-links">
+                <a href="#" title="Facebook">f</a>
+                <a href="#" title="Twitter">𝕏</a>
+                <a href="#" title="LinkedIn">in</a>
+                <a href="#" title="Instagram">📷</a>
+            </div>
+            <p class="footer-text">&copy; 2025 StartHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const nav = document.getElementById('nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        nav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
